@@ -1,0 +1,265 @@
+* {
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: white;
+
+}
+
+.container {
+    row-gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        grid-area: nav;
+        display: block;
+    }
+
+    .nav .item-nav {
+        display: block;
+        width: 100%;
+
+    }
+
+    .nav-show {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 2.5rem;
+    }
+
+    .section {
+        width: 45%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template: 1fr/1fr auto;
+        grid-template-areas: "header header"
+            "nav nav"
+            "main main";
+    }
+
+
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template: 1fr 3fr 3fr/200px 1fr 2fr;
+        grid-template-areas: "header header header"
+            "nav main main"
+            "nav main main"
+            "nav aside aside";
+    }
+    .nav {
+
+        align-items: start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav .nav-links {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+    .container {
+        display: grid;
+        grid-template: 1fr 3fr 3fr 1fr/200px 1fr 2fr;
+        grid-template-areas: "header header header"
+            "nav main main"
+            "nav main main"
+            "nav aside aside";
+        max-width: 1600px;
+        margin: auto;
+    }
+
+    .nav .nav-links {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+body h1, h4{
+    font-family: 'Carter One', cursive;
+    padding: 1rem;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+}
+#cinciaMente{
+    font-family: 'Permanent Marker', cursive;
+}
+p{
+    padding: 0 1rem;
+}
+.header img {
+    height: 4rem;
+}
+
+.nav {
+    background-color: rgb(228, 255, 220);
+}
+
+.item-nav {
+    background-color: lightgray;
+    border-radius: 15px 0px;
+    padding: 5px;
+    margin: 5px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.item-nav:hover {
+    border-radius: 0px 15px;
+    background-color: chartreuse;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+    display: flex;
+    padding: 1rem;
+    padding-top: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section img {
+    width: 20vw;
+    float: right;
+}
+
+.aside {
+    grid-area: aside;
+    justify-content: center;
+
+
+}
+
+.button-menu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+}
+
+.button-menu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #444444;
+    border-radius: 3px;
+}
+
+@media screen and (min-width:576px) {
+    .button-menu {
+        display: none;
+    }
+}
+
+footer a {
+    text-decoration: none;
+    color: green;
+    font-size: 24px;
+}
+
+#footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 199, 27);
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    margin-top: 0;
+}
+
+section {
+    margin: 5px;
+    padding: 2px;
+    box-shadow: 0px 0px 15px 1px rgb(202, 202, 202);
+}
+
+.form-contacto {
+    width: 80%;
+    background-color: rgb(211, 255, 202);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}

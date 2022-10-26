@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <title>Contacto</title>
+  <link rel="icon" href="/IMG/1.ico">
+  <script src="https://kit.fontawesome.com/68f4fac034.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+  <header id="header" class="header"></header>
+  <div class="form-contacto">
+    <h1>Contacto</h1>
+    <form action="" name="formContacto">
+      <fieldset>
+        <legend>Datos personales</legend>
+        Nombre/s <input type='text' name='nombre'> <br />
+        Apellido/s <input type='text' name='apellido'> <br />
+        Edad <input type='text' name='edad'> <br />
+        Zona de residencia <input type='text' name='zona'> <br />
+        Dirección de email <input type='text' name='email'> <br />
+      </fieldset>
+      <fieldset>
+        <legend>Indicá tus preferencias</legend>
+        <input type='radio' name='prefer' value='química'> Química
+        <input type='radio' name='prefer' value='física'> Física
+        <input type='radio' name='prefer' value='biología'> Biología
+        <input type='radio' name='prefer' value='matemática'> Matemática
+        <input type='radio' name='prefer' value='medioambiente'> Medioambiente
+        <input type='radio' name='prefer' value='informática'> Informática
+        <input type='radio' name='prefer' value='otras'> Otras </br>
+        Si elegiste 'Otras' ¿cuál? <input type='text' name='descotra'> <br />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Actividad</legend>
+        Disponibilidad para dedicarle al club: </br>
+        <select name='horas'>
+          <option value='a01'>2 horas por semana</option>
+          <option value='a02'>5 horas por semana</option>
+          <option value='a03'>Más de 5 horas por semana</option>
+        </select>
+        </br>
+        </br>
+        Tareas que te gustaría llevar a cabo:</br>
+        <input type='checkbox' name='tarea' value='administración'> Administración <br />
+        <input type='checkbox' name='tarea' value='investigación'> Investigación <br />
+        <input type='checkbox' name='tarea' value='diseno'> Diseño de materiales <br />
+        <input type='checkbox' name='tarea' value='relaciones'> Relaciones Públicas <br />
+        <input type='checkbox' name='tarea' value='otras'> Otras <br />
+        Si elegiste 'Otras' ¿cuál? <input type='text' name='descotra'> <br />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Tu mensaje </legend>
+        <textarea rows='4'
+          cols='52'>Usá este recuadro para contarnos más sobre vos y por qué querés unirte...</textarea>
+        <br />
+      </fieldset>
+      <br>
+      <input type="reset">
+      <input type="submit" onclick="valida_envia()">
+    </form>
+
+    <a href="/index.html"><i class="fa-regular fa-square-left"></i></a>
+  </div>
+  <footer id="footer">
+  </footer>
+
+  <script src="/js/scripts.js"></script>
+</body>
+
+</html>
